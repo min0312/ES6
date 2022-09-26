@@ -5,17 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0", user-scalabel="no">
   <link rel = "stylesheet" href="./style/index.css">
   <title>JS PWA</title>
-</head>
+<!-- 내부 자바스크립트 -->
+<!-- 위치1.
+  <script>
+  //  alert("Hello World!");
+  //  console.log("Hello World!");
+  </script> -->
+  <script src="./script/index.js"></script>
+</head> 
 <body>
   <div id="root">
     <header>
       <h1>자바스크립트 연습</h1>
     </header>
+    <!-- 위치2.
+  <script>
+   alert("Hello World!");
+   console.log("Hello World!");
+  </script>
+  -->
     <main id="content">
       <section id="bt">
-        <button class="bt1">버튼1</button>
+        <button class="bt1" onclick="funPrint(1);">버튼1</button>
+        <button class="bt2" onclick="funPrint(2);">버튼2</button>
       </section>
     </main>
   </div>
+  <!-- 위치3.
+  <script>
+   alert("Hello World!");
+   console.log("Hello World!");
+  </script>
+  -->
 </body>
 </html>
