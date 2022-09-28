@@ -27,15 +27,22 @@ main {
   height: 90vh;
   background-color: #E7E0EC;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
+
+/* #msg {
+  display: none;
+} */
 
 main > section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 2vh;
 }
 
 button {
@@ -52,7 +59,28 @@ button {
   margin: 1vh;
 }
 
+.divMsg {
+  background-color: #92bfdb;
+  color : #6750A4;
+  border-radius: 8px;
+  border-color: #625B71;
+  display: inline-block;
+  width: 100%;
+  width: 50vw;
+  height: 20vw;
+  margin: 1vh;
+  font-size: 1rem;
+}
+
 button:hover, button:active {
   background-color: #6750A4;
   color: #E8DEF8;
+}
+
+
+#dice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
