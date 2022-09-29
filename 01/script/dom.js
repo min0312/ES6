@@ -54,14 +54,71 @@
 
 // 랜덤생성 주사위 번호 맞추기
 
-const show = () => {
-  
 
-
+let arrRadio = document.getElementsByName("num");
+for (i=1; i<arrRadio.length; i++) {
+  if (arrRadio[i].checked) {
+    const showDice = () => {
+      let img2 = "";
+      img2 = `<div class="ox"><img src="../img/o.png" id="diceox">o</div>`
+      const msgDiv = document.querySelector('#dice')
+      msgDiv.innerHTML = img2
+    }
 }
+}
+
+let img2 = "";
+  img2 = `<div class="ox"><img src="../img/o.png" id="diceox">o</div>`
+  const msgDiv = document.querySelector('#msg')
+  msgDiv.innerHTML = img2
+
+  
+/* const showok = () => {
+  const i = Math.floor(Math.random() * 6+1)
+  ran = `<div class="dice"><img src="../img/${i}.png" id="randomdice">${i}</div>`
+  const msgDiv = document.querySelector('#dice')
+  msgDiv.innerHTML = ran
+}
+if ( rt == i) {
+  let img2 = "";
+  img2 = `<div class="ox"><img src="../img/o.png" id="diceox">o</div>`
+  const msgDiv = document.querySelector('#msg')
+  msgDiv.innerHTML = img2
+} else {
+  let img2 = "";
+  img2 = `<div class="ox"><img src="../img/x.png" id="diceox">x</div>`
+  const msgDiv = document.querySelector('#msg')
+  msgDiv.innerHTML = img2
+} */
 
 // 폼 숨기기
 // const formSection = document.querySelector('formSection')
 // formSection.style.disply = "none"
 // 폼 보이기
 // formSection.style.disply = "block"
+
+
+/* myFunction = () => {
+  const rt = form1.num.value;
+    let arrRadio = document.getElementsByName("num");
+    for (i=1; i<arrRadio.length; i++) {
+      if (arrRadio[i].checked) {
+        let ran = "";
+        const i = Math.floor(Math.random() * 6+1)
+        ran = `<div class="dice"><img src="../img/${i}.png" id="randomdice">${i}</div>`
+        const msgDiv = document.querySelector('#dice')
+        msgDiv.innerHTML = ran
+        if ( rt == i) {
+          let img2 = "";
+          img2 = `<div class="ox"><img src="../img/o.png" id="diceox">o</div>`
+          const msgDiv = document.querySelector('#msg')
+          msgDiv.innerHTML = img2
+        } else {
+          let img2 = "";
+          img2 = `<div class="ox"><img src="../img/x.png" id="diceox">x</div>`
+          const msgDiv = document.querySelector('#msg')
+          msgDiv.innerHTML = img2
+        }
+      }
+  }
+} */
