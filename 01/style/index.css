@@ -10,7 +10,10 @@
   padding: 0px;
 }
 
+
+
 header {
+  width : 100%;
   height: 10vh;
   background-color: #21005D;
   color : #EADDFF;
@@ -24,6 +27,7 @@ header {
 
 
 main {
+  width : 100%;
   height: 90vh;
   background-color: #E7E0EC;
   display: flex;
@@ -38,11 +42,13 @@ main {
 } */
 
 main > section {
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 2vh;
+  font-family: 'EliceDigitalBaeum-Bd';
 }
 
 button {
@@ -57,6 +63,7 @@ button {
   height: 20vw;
   max-height: 50px;
   margin: 1vh;
+  cursor: pointer;
 }
 
 button:hover, button:active {
@@ -64,10 +71,44 @@ button:hover, button:active {
   color: #E8DEF8;
 }
 
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  display: inline-block;
+  padding: 8px 10px;
+  border: 1px solid #dfdfdf;
+  background-color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+}
+
+legend {
+  color :#21005D;
+}
 
 #dice {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+input[type="radio"] + label {
+  display: inline-block;
+  padding: 8px 10px;
+  border: 1px solid #dfdfdf;
+  background-color: #ffffff;
+  color :#21005D;
+  text-align: center;
+  cursor: pointer;
+}
+
+fieldset {
+  width: 60vw;
+  height: 12vw;
+  padding: 5vw 2vw;
+  font-size: 4vw;
+  border: 1px solid #dfdfdf;
 }
